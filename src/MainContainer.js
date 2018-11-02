@@ -4,11 +4,18 @@ import Container from './components/Container';
 
 
 class MainContainer extends Component {
+    state ={
+        menu: "HOME"
+    }
+
+    handleMenuClick = (menu) =>{
+        this.setState({menu})
+    }
     render() {
         return (
             <div>
-                <NavBar />
-                <Container />
+                <NavBar handleMenuClick={this.handleMenuClick}/>
+                <Container menu={this.state.menu}/>
                 
             </div>
         );
