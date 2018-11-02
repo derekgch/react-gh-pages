@@ -23,20 +23,30 @@ const styles = {
 
 function ButtonAppBar(props) {
   const { classes } = props;
+
+  const handleClick = (event) =>{
+      // console.log(event.target.id)
+    if(event.target.tagName === "BUTTON" || event.target.tagName === "SPAN"){
+        let menu = event.target.innerText.toLowerCase().trim();
+        // console.log(menu);
+        props.handleMenuClick(menu);
+    }
+  }
   return (
     <div className={classes.root}>
       <AppBar position="static">
-        <Toolbar>
-          <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
-            {/* <MenuIcon /> */}
-          </IconButton>
+        <Toolbar onClick={handleClick}>
+          {/* <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
+            
+          </IconButton> */}
           <Typography variant="h6" color="inherit" className={classes.grow}>
-            <Button color="inherit">Home</Button>
-            <Button color="inherit">Projects</Button>
-            <Button color="inherit">Gallery</Button>
-            <Button color="inherit">About</Button>
-            <Button color="inherit">Contact</Button>
+            <Button color="inherit" >Home</Button>
+            <Button color="inherit" >Projects</Button>
+            <Button color="inherit" >Gallery</Button>
+            <Button color="inherit" >About</Button>
           </Typography>
+
+          <Button color="inherit" >Contact</Button>
         </Toolbar>
       </AppBar>
     </div>
