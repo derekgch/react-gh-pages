@@ -2,10 +2,7 @@
 body {
   text-align: center;
 }
-.ButtonAppBar-root-1{
-  position: fixed;
-  display: inline-flex;
-}
+
 
 #home{
   background:url(../src/images/Santorini.jpg) top right ;
@@ -25,3 +22,9 @@ body {
     padding: 60px;
     height: 700px;
 }
+
+
+/* .ButtonAppBar-root-1{ 
+  position: fixed;
+  display: block;
+}  */
