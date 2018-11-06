@@ -34,7 +34,7 @@ function ButtonAppBar(props) {
   }
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="static" style={{background:"black"}}>
         <Toolbar onClick={handleClick}>
           {/* <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
             

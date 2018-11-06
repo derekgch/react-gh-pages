@@ -5,7 +5,7 @@ import Container from './components/Container';
 
 class MainContainer extends Component {
     state ={
-        menu: "HOME"
+        menu: "home"
     }
 
     handleMenuClick = (menu) =>{
