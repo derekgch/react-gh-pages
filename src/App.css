@@ -1,32 +1,27 @@
-.App {
+
+body {
   text-align: center;
 }
-
-
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.ButtonAppBar-root-1{
+  position: fixed;
+  display: inline-flex;
 }
 
-.App-link {
-  color: #61dafb;
+#home{
+  background:url(../src/images/Santorini.jpg) top right ;
+  background-repeat: no-repeat; 
+  background-attachment:fixed; 
+  background-size: cover;
+
 }
 
-.background-home{
-  position: absolute;
-  left: 0em;
-  right: 0em;
-  bottom: 0em;
-  top:0em;
-  margin: auto;
-  width: 100%;
-  z-index: -1;
+.name-title{
+  position: relative;
+  display: grid;
+  top: 15em;
+}
 
+.front {
+    padding: 60px;
+    height: 700px;
 }
