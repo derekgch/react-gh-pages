@@ -43,9 +43,9 @@ function ButtonAppBar(props) {
           <Typography variant="h4" color="inherit" className={classes.grow} >
             <Button color="inherit" >Home</Button>
             <Button color="inherit" >Projects</Button>
-            <Button color="inherit" >Gallery</Button>
+            {/* <Button color="inherit" >Gallery</Button> */}
             <Button color="inherit" >About</Button>
-            <Button color="inherit" >Contact</Button>
+            {/* <Button color="inherit" >Contact</Button> */}
 
           </Typography>
 
