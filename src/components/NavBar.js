@@ -32,21 +32,23 @@ function ButtonAppBar(props) {
         props.handleMenuClick(menu);
     }
   }
+  //#42a5f5 position="static"
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar  style={{background:"transparent", color:"black", boxShadow: 'none'}}>
         <Toolbar onClick={handleClick}>
           {/* <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
             
           </IconButton> */}
-          <Typography variant="h6" color="inherit" className={classes.grow}>
+          <Typography variant="h4" color="inherit" className={classes.grow} >
             <Button color="inherit" >Home</Button>
             <Button color="inherit" >Projects</Button>
-            <Button color="inherit" >Gallery</Button>
+            {/* <Button color="inherit" >Gallery</Button> */}
             <Button color="inherit" >About</Button>
+            {/* <Button color="inherit" >Contact</Button> */}
+
           </Typography>
 
-          <Button color="inherit" >Contact</Button>
         </Toolbar>
       </AppBar>
     </div>
