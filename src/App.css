@@ -24,10 +24,12 @@ body {
 }
 
 
-.ButtonAppBar-root-1{ 
+nav{ 
   transition: all 0.5s ease;
 } 
-.ScrollUp{
-  transition: all 0.5s ease;
+nav.ScrollUp{
   transform: translateY(-80px);
+}
+nav.ScrollDown{
+  transform: translateY(0px);
 }

@@ -12,8 +12,7 @@ class MainContainer extends Component {
     }
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
-        
-        
+                
     };
     
     componentWillUnmount() {
@@ -29,8 +28,7 @@ class MainContainer extends Component {
            y: supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop
         };
 
-        if(scroll.y > this.state.scrollPos){
-            
+        if(scroll.y > this.state.scrollPos){            
             this.setState({showMenu:false, scrollPos:scroll.y});
         }else{
             this.setState({showMenu:true, scrollPos:scroll.y});
@@ -38,20 +36,20 @@ class MainContainer extends Component {
 
 
         
-        console.log('the scroll things', event, scroll)
-    }, 200)
+        // console.log('the scroll things', event, scroll)
+    }, 600)
 
     handleMenuClick = (menu) =>{
         this.setState({menu})
     }
    
     render() {
-        const navbarClassName = this.state.showMenu? "" : "ScrollUp";
+        const navbarClassName = this.state.showMenu? "nav ScrollDown" : "nav ScrollUp";
         return (
             <div >
-                <div className={navbarClassName} >
+                <nav className={navbarClassName} >
                     <NavBar handleMenuClick={this.handleMenuClick} />
-                </div>
+                </nav>
                 <Container menu={this.state.menu}/>
                 
             </div>
