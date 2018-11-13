@@ -31,10 +31,10 @@ function ButtonAppBar(props) {
         props.handleMenuClick(menu);
     }
   }
-  //#42a5f5 position="static"
+  //#42a5f5 position="static",boxShadow: 'none'
   return (
     <div className={classes.root}>
-      <AppBar  style={{background:"transparent", color:"black", boxShadow: 'none'}}>
+      <AppBar  style={{background:"#42a5f5", color:"white"}}>
         <Toolbar onClick={handleClick}>
           {/* <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
             

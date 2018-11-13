@@ -15,16 +15,21 @@ body {
 .name-title{
   position: relative;
   display: grid;
-  top: 15em;
+  top: 20em;
 }
 
 .front {
     padding: 60px;
-    height: 700px;
+    height: 100vh;
 }
 
 
-/* .ButtonAppBar-root-1{ 
-  position: fixed;
-  display: block;
-}  */
+nav{ 
+  transition: all 0.5s ease;
+} 
+nav.ScrollUp{
+  transform: translateY(-80px);
+}
+nav.ScrollDown{
+  transform: translateY(0px);
+}
