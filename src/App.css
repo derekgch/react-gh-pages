@@ -25,6 +25,7 @@ body {
 
 
 nav{ 
+  position: fixed;
   transition: all 0.5s ease;
 } 
 nav.ScrollUp{
