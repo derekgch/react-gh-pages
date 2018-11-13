@@ -24,7 +24,10 @@ body {
 }
 
 
-/* .ButtonAppBar-root-1{ 
-  position: fixed;
-  display: block;
-}  */
+.ButtonAppBar-root-1{ 
+  transition: all 0.5s ease;
+} 
+.ScrollUp{
+  transition: all 0.5s ease;
+  transform: translateY(-80px);
+}
