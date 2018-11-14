@@ -25,11 +25,11 @@ class Container extends Component {
         // console.log(menu)
         switch (menu) {
             case "home":
-                this.refs.home.scrollIntoView()
+                this.refs.home.scrollIntoView({behavior: "smooth"})
                 return <Home />;
 
             case "projects":
-                this.refs.projects.scrollIntoView()
+                this.refs.projects.scrollIntoView({behavior: "smooth"})
                 return <Projects />;
                 
             case "contact":
@@ -37,7 +37,7 @@ class Container extends Component {
 
             case "about":
                 console.log("ref?")
-                this.refs.about.scrollIntoView()
+                this.refs.about.scrollIntoView({behavior: "smooth"})
                 return <About />;
 
             case "gallery":
@@ -49,7 +49,7 @@ class Container extends Component {
     render() {
         this.selectPage(this.props.menu);
         return (
-            <div>
+            <div className="container">
                 {/* {this.selectPage(this.props.menu)} */}
                 <div  ref="home">
                     <Home />
