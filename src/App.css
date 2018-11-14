@@ -34,3 +34,7 @@ nav.ScrollUp{
 nav.ScrollDown{
   transform: translateY(0px);
 }
+
+nav:hover{
+  transform: translateY(0px);
+}

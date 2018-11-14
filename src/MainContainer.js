@@ -6,7 +6,7 @@ import _debounce from 'lodash/debounce';
 
 class MainContainer extends Component {
     state ={
-        menu: "home",
+        menu: "",
         showMenu:false,
         scrollPos:0,
     }
@@ -29,9 +29,9 @@ class MainContainer extends Component {
         };
 
         if(scroll.y > this.state.scrollPos){            
-            this.setState({showMenu:false, scrollPos:scroll.y});
+            this.setState({showMenu:false, scrollPos:scroll.y, menu:""});
         }else{
-            this.setState({showMenu:true, scrollPos:scroll.y});
+            this.setState({showMenu:true, scrollPos:scroll.y, menu: ""});
         }
 
 

@@ -6,20 +6,38 @@ import About from './About';
 import Gallery from './Gallery';
 
 class Container extends Component {
+    componentDidMount(){
+        // this.refs.home.scrollIntoView();
+        // this.refs.about.scrollIntoView()
+        
+
+    }
+    shouldComponentUpdate(nextProps){
+        if(this.props.menu != nextProps.menu){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
     selectPage = (menu) =>{
         // console.log(menu)
         switch (menu) {
             case "home":
+                this.refs.home.scrollIntoView()
                 return <Home />;
 
             case "projects":
+                this.refs.projects.scrollIntoView()
                 return <Projects />;
                 
-
             case "contact":
                 return <Contact />;
 
             case "about":
+                console.log("ref?")
+                this.refs.about.scrollIntoView()
                 return <About />;
 
             case "gallery":
@@ -29,9 +47,22 @@ class Container extends Component {
 
 
     render() {
+        this.selectPage(this.props.menu);
         return (
             <div>
-                {this.selectPage(this.props.menu)}
+                {/* {this.selectPage(this.props.menu)} */}
+                <div  ref="home">
+                    <Home />
+                </div>
+                
+                <div ref="projects">
+                <Projects />
+                </div>
+                
+                <div ref="about">
+                <About />
+                </div>
+                
             </div>
         );
     }
