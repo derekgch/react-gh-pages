@@ -30,7 +30,6 @@ import Typography from '@material-ui/core/Typography';
 import Icon from '@material-ui/core/Icon';
 import EmailIcon from '@material-ui/icons/Email';
 import SvgIcon from '@material-ui/core/SvgIcon';
-import LinkedIn from './LinkedIn';
 
 
 const styles = {
@@ -58,10 +57,10 @@ function Contact(props) {
     <Card className={classes.card}>
       <CardContent>
       <Typography variant="h1" component="h1" >
-            <Button size="large" className={classes.button}  href="https://www.linkedin.com/in/derekgc/">linkedin
-                <SvgIcon>
-                <path  d="M22 617V221l2-6c7-33 27-55 61-64l12-3h406l5 1c34 8 57 28 66 60l3 12v396l-1 6c-8 33-28 55-62 64l-11 3H96l-5-1c-34-8-56-28-66-61l-3-11zm322-250v-29c0-3 0-5-4-5l-75 1c-4 0-4 1-4 4v235c0 5 1 6 5 6h73c4 0 5-1 5-5v-40l1-98c0-20 16-42 41-44 15 0 30 4 38 19 6 10 8 21 8 32v131c0 4 1 5 5 5h73c4 0 6-1 6-5V439c0-21-3-41-12-60-8-19-22-33-42-42-16-8-33-10-51-9-21 2-39 9-54 24l-13 15zm-129 90V338c0-3-1-5-5-5h-74c-4 0-5 2-5 6v234c0 4 1 6 5 6h73c6 0 6 0 6-6V457zm-40-242c-20 0-41 10-47 32-5 18 4 40 21 48 10 5 20 6 31 5 32-4 49-34 36-61-9-17-24-23-41-24z" transform="translate(-22 -148)"/>
-                <path  d="M96 148l-11 3c-34 9-54 31-61 64l-2 6v-73zM22 617l3 11c10 34 32 53 66 61l5 1H22zM503 690l11-3c34-9 54-31 62-64l1-6v73zM577 221l-3-12a82 82 0 0 0-66-59l-5-2h74zM344 367l13-15c15-15 33-22 54-24 18-1 35 1 51 9 20 9 34 23 42 42 9 19 12 39 12 60v135c0 4-2 5-6 5h-73c-4 0-5-1-5-6V443c0-11-2-22-8-32-8-15-23-20-38-19-25 2-41 24-41 44l-1 98v40c0 4-1 5-5 5h-73c-4 0-5-1-5-6V360v-22c0-3 0-5 4-5h75c4 0 4 2 4 5v29zM215 457v116c0 6 0 6-6 6h-73c-4 0-5-1-5-6V339c0-4 1-6 5-6h74c4 0 5 2 5 5v119zM175 215c17 1 32 7 40 24 14 27-3 57-35 61-11 1-21 0-31-5-17-8-26-30-21-48 6-22 27-32 47-32z" className="cls-1" transform="translate(-22 -148)"/>  
+            <Button size="large" className={classes.button}  href="https://www.linkedin.com/in/derekgc/">
+                <SvgIcon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 555 576">
+                    <path d="M0 499V77l2-6C9 36 29 13 63 3l11-3h407l5 2c34 7 57 28 66 63l3 12v422l-1 5c-8 36-28 59-62 69l-11 3H74l-5-1c-34-8-56-29-66-64l-3-12zm322-266v-31c0-3 0-5-4-5h-75c-4 0-4 1-4 4v251c0 5 1 6 5 6h73c4 0 5-1 5-5v-43l1-104c0-21 16-45 41-46 15-1 30 4 38 19 6 11 8 23 8 35v138c0 5 1 6 5 6h73c4 0 6-1 6-5V309c0-22-3-43-12-63-8-20-22-36-42-46-16-7-33-10-51-8-21 1-39 9-54 25l-13 16zm-129 95V202c0-4-1-5-5-5h-74c-4 0-5 2-5 6v249c0 4 1 6 5 6h73c6 0 6 0 6-6V328zM153 72c-20 0-41 9-47 34-5 18 4 42 21 50 10 5 20 6 31 5 32-3 49-35 36-64-9-18-24-25-41-25z"/>
+                    <path fill="#fff" d="M322 233l13-16c15-16 33-24 54-25 18-2 35 1 51 8 20 10 34 26 42 46 9 20 12 41 12 63v144c0 4-2 5-6 5h-73c-4 0-5-1-5-6V314c0-12-2-24-8-35-8-15-23-20-38-19-25 1-41 25-41 46l-1 104v43c0 4-1 5-5 5h-73c-4 0-5-1-5-6V226v-25c0-3 0-4 4-4h75c4 0 4 2 4 4v32zM193 328v124c0 6 0 6-6 6h-73c-4 0-5-2-5-6V203c0-4 1-6 5-6h74c4 0 5 1 5 5v126zM153 72c17 0 32 7 40 25 14 29-3 61-35 64-11 1-21 0-31-5-17-8-26-32-21-50 6-25 27-34 47-34z"/>
                 </SvgIcon>
             </Button>
             <Button size="large" className={classes.button} href="https://github.com/derekgch">
