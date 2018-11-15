@@ -27,6 +27,7 @@ body {
 nav{ 
   position: fixed;
   transition: all 0.5s ease;
+  transform: translateY(-80px);
 } 
 nav.ScrollUp{
   transform: translateY(-80px);
@@ -40,4 +41,11 @@ nav:hover{
 }
 .container{
   transition: all 0.5s ease;
+}
+
+.links{
+  display: flex;
+}
+a{
+  margin: auto;
 }

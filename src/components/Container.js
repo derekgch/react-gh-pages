@@ -26,19 +26,19 @@ class Container extends Component {
         switch (menu) {
             case "home":
                 this.refs.home.scrollIntoView({behavior: "smooth"})
-                return <Home />;
+                return ;
 
             case "projects":
                 this.refs.projects.scrollIntoView({behavior: "smooth"})
-                return <Projects />;
+                return ;
                 
             case "contact":
                 return <Contact />;
 
             case "about":
-                console.log("ref?")
+                // console.log("ref?")
                 this.refs.about.scrollIntoView({behavior: "smooth"})
-                return <About />;
+                return;
 
             case "gallery":
                 return <Gallery />;

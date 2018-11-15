@@ -37,7 +37,7 @@ class MainContainer extends Component {
 
         
         // console.log('the scroll things', event, scroll)
-    }, 600)
+    }, 500)
 
     handleMenuClick = (menu) =>{
         this.setState({menu})

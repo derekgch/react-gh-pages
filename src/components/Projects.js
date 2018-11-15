@@ -5,6 +5,7 @@ class Projects extends Component {
         return (
             <div id="home" className="front">
                 Projects
+                
             </div>
         );
     }
