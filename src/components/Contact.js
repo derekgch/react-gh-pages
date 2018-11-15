@@ -23,11 +23,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import Icon from '@material-ui/core/Icon';
 import EmailIcon from '@material-ui/icons/Email';
 import SvgIcon from '@material-ui/core/SvgIcon';
 
@@ -54,9 +52,16 @@ function Contact(props) {
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
-    <Card className={classes.card}>
+    <Card className={classes.card} style={{background:"transparent", color:"white"}}>
       <CardContent>
-      <Typography variant="h1" component="h1" >
+      <Typography variant="h5" component="h3">
+            Contact me
+        </Typography>
+
+      <Typography variant="h5" component="h3" >
+
+            
+
             <Button size="large" className={classes.button}  href="https://www.linkedin.com/in/derekgc/">
                 <SvgIcon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 555 576">
                     <path d="M0 499V77l2-6C9 36 29 13 63 3l11-3h407l5 2c34 7 57 28 66 63l3 12v422l-1 5c-8 36-28 59-62 69l-11 3H74l-5-1c-34-8-56-29-66-64l-3-12zm322-266v-31c0-3 0-5-4-5h-75c-4 0-4 1-4 4v251c0 5 1 6 5 6h73c4 0 5-1 5-5v-43l1-104c0-21 16-45 41-46 15-1 30 4 38 19 6 11 8 23 8 35v138c0 5 1 6 5 6h73c4 0 6-1 6-5V309c0-22-3-43-12-63-8-20-22-36-42-46-16-7-33-10-51-8-21 1-39 9-54 25l-13 16zm-129 95V202c0-4-1-5-5-5h-74c-4 0-5 2-5 6v249c0 4 1 6 5 6h73c6 0 6 0 6-6V328zM153 72c-20 0-41 9-47 34-5 18 4 42 21 50 10 5 20 6 31 5 32-3 49-35 36-64-9-18-24-25-41-25z"/>
