@@ -15,21 +15,39 @@ body {
 .name-title{
   position: relative;
   display: grid;
-  top: 20em;
+  top: 50em;
 }
 
 .front {
     padding: 60px;
-    height: 100vh;
+    height: 80vh;
 }
 
 
 nav{ 
+  background-color: dimgrey;
+  z-index: 1;
+  position: fixed;
   transition: all 0.5s ease;
+  transform: translateY(-80px);
 } 
 nav.ScrollUp{
   transform: translateY(-80px);
 }
 nav.ScrollDown{
   transform: translateY(0px);
+}
+
+nav:hover{
+  transform: translateY(0px);
+}
+.container{
+  transition: all 0.5s ease;
+}
+
+.links{
+  display: flex;
+}
+a{
+  margin: auto;
 }
