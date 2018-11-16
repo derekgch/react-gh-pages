@@ -4,14 +4,10 @@ import Projects from './Projects';
 import Contact from './Contact';
 import About from './About';
 import Gallery from './Gallery';
+import Name from './Name';
 
 class Container extends Component {
-    componentDidMount(){
-        // this.refs.home.scrollIntoView();
-        // this.refs.about.scrollIntoView()
-        
 
-    }
     shouldComponentUpdate(nextProps){
         if(this.props.menu != nextProps.menu){
             return true;
@@ -54,7 +50,8 @@ class Container extends Component {
                 <div  ref="home">
                     <Home />
                 </div>
-                
+               <Name />
+
                 <div ref="projects">
                 <Projects />
                 </div>

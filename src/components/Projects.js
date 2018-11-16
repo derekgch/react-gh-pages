@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import ProjectCard from './ProjectCard';
-import image1 from '../images/derekchen.jpg'
+import typingGame from '../images/typing.png'
+import stockfinder from '../images/stockfinder.png'
+import play from '../images/play.png'
 
 
 import PropTypes from 'prop-types';
@@ -17,34 +19,38 @@ function Projects(props) {
     const { classes } = props;
         return (
             <div id="home" className="front">
-                <h2 > Projects </h2>
+                <h1 > Projects </h1>
                 <div className={classes.root}>
-                    <Grid container spacing={24}>
+                    <Grid container spacing={24} >
                         <Grid item xs={4}>
                         <ProjectCard 
                             className={classes.paper}
-                            title="google"
-                            description="whatever"
-                            imageUrl= {image1}
-                            urls={[{link:"www.youtube.com", website:"youtube"}, {link:"www.youtube.com", website:"youtube"}]}
+                            title="Stock Finder"
+                            description="A personal finance tool for stock portfolio review and analysis"
+                            imageUrl= {stockfinder}
+                            urls={[{link:"https://github.com/derekgch/Stock-finder-frontend", website:"github"},
+                            {link:"https://www.youtube.com/watch?v=hIrq1UIZmIo", website:"Demo"}, 
+                            {link:"https://frontend-stockfinder.herokuapp.com/", website:"heroku"}]}
                         />
                         
                         </Grid>
                         <Grid item xs={4}>
                         <ProjectCard 
-                            title="yoyo"
-                            description="whatever"
-                            imageUrl= {image1}
-                            urls={[{link:"www.youtube.com", website:"youtube"}, {link:"www.youtube.com", website:"youtube"}]}
+                            title="Play and Learn"
+                            description=" A web app that helps kids and teens to learn math and English"
+                            imageUrl= {play}
+                            urls={[{link:"www.youtube.com", website:"Github"},
+                            {link:"https://www.youtube.com/watch?v=HcYxzMOqLIA", website:"Demo"}, 
+                            ]}
                             />
                         </Grid>
                         
                         <Grid item xs={4}>
                         <ProjectCard 
-                            title="yahoo"
-                            description="whatever"
-                            imageUrl= {image1}
-                            urls={[{link:"www.youtube.com", website:"youtube"}, {link:"www.youtube.com", website:"youtube"}]}
+                            title="Typing Game"
+                            description="A 30-second timed game help people track, practice, and improve their typing skills"
+                            imageUrl= {typingGame}
+                            urls={[{link:"https://github.com/derekgch/typing-game", website:"Github"}, {link:"https://hidden-woodland-52554.herokuapp.com/main.html", website:"Heroku"}]}
                             />
 
                     </Grid>

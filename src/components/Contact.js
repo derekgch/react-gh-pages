@@ -1,22 +1,3 @@
-// import React, { Component } from 'react';
-
-// class Contact extends Component {
-//     render() {
-//         return (
-//             <div>
-//                 <h3>Contact Me:</h3>
-//                 <div className="links">
-//                 <a href="https://www.linkedin.com/in/derekgc/">LinkedIn</a> 
-//                 <a href="https://github.com/derekgch">GitHub</a> 
-//                 <a href="mailto:derek@derekgc.com">Email</a>
-//                 </div>
-
-//             </div>
-//         );
-//     }
-// }
-
-// export default Contact;
 
 
 import React from 'react';
@@ -49,7 +30,6 @@ const styles = {
 
 function Contact(props) {
   const { classes } = props;
-  const bull = <span className={classes.bullet}>•</span>;
 
   return (
     <Card className={classes.card} style={{background:"transparent", color:"white"}}>

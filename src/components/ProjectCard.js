@@ -45,7 +45,7 @@ function ProjectCard(props) {
           <Typography gutterBottom variant="h5" component="h2">
             {props.title}
           </Typography>
-          <Typography component="p">
+          <Typography component="p" noWrap>
             {props.description}
           </Typography>
         </CardContent>
