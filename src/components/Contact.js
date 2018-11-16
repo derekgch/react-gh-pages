@@ -55,7 +55,7 @@ function Contact(props) {
     <Card className={classes.card} style={{background:"transparent", color:"white"}}>
       <CardContent>
       <Typography variant="h5" component="h3">
-            Contact me
+            Contact
         </Typography>
 
       <Typography variant="h5" component="h3" >

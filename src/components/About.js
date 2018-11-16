@@ -59,7 +59,7 @@ function About(props) {
             <Typography variant="h5" component="h2" >
             <img src={selfImage} className="self-image" width="30%"/>
             <br></br>
-                About me
+                About
    
                 </Typography>
 
