@@ -23,6 +23,10 @@ body {
     height: 110vh;
 }
 
+.MuiGrid-spacing-xs-24-140 > .MuiGrid-item-117{
+  flex-basis: 0%;
+}
+
 
 nav{ 
   background-color: dimgrey;

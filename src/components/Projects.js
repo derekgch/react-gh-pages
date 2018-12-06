@@ -29,9 +29,9 @@ function Projects(props) {
                 <h1 > Projects </h1>
                 <div >
 
-                    <Grid container spacing={24} >
+                    <Grid container spacing={24}  justify = "center">
 
-                    <Grid item xs={4}>
+                    <Grid item xs={6} >
                         <ProjectCard 
                             title="Trade Simulator"
                             description="A stock trade application allows users to simulate buy/sell stocks at real time prices."
@@ -41,7 +41,7 @@ function Projects(props) {
                             />
 
                     </Grid>
-                        <Grid item xs={4}>
+                        <Grid item xs={6}>
                         <ProjectCard 
                             className={classes.paper}
                             title="Stock Finder"
@@ -53,18 +53,20 @@ function Projects(props) {
                         />
                         
                         </Grid>
-                        <Grid item xs={4}>
+                        <Grid item xs={6}>
                         <ProjectCard 
                             title="Play and Learn"
                             description=" A web app that helps kids and teens to learn math and English"
                             imageUrl= {play}
-                            urls={[{link:"www.youtube.com", website:"Github"},
+                            urls={[{link:"https://github.com/derekgch/play-and-learn-frontend", website:"Github"},
                             {link:"https://www.youtube.com/watch?v=HcYxzMOqLIA", website:"Demo video"}, 
+                            {link:"https://derekgch.github.io/play-and-learn-frontend/", website:"S-Player Demo"}, 
+
                             ]}
                             />
                         </Grid>
 
-                        <Grid item xs={4}>
+                        <Grid item xs={6}>
                             <ProjectCard 
                                 title="Typing Game"
                                 description="A 30-second timed game help people track, practice, and improve their typing skills"
