@@ -73,7 +73,7 @@ function Name(props) {
     <Card className={classes.card} style={{background:"transparent", color:"black", boxShadow:"none"}}>
       <CardContent>
       <Typography variant="h3" component="h3">
-            Derek Chen
+            Derek G Chen
         </Typography>
 
       <Typography variant="h6" component="h3">

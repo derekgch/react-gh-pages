@@ -20,7 +20,11 @@ body {
 
 .front {
     padding: 60px;
-    height: 80vh;
+    height: 110vh;
+}
+
+.MuiGrid-spacing-xs-24-140 > .MuiGrid-item-117{
+  flex-basis: 0%;
 }
 
 
