@@ -15,7 +15,10 @@ body {
 .name-title{
   position: relative;
   display: grid;
-  top: 50em;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  opacity: 0.6;
 }
 
 .front {
@@ -54,4 +57,21 @@ nav:hover{
 }
 a{
   margin: auto;
+}
+
+
+.transitions-item {
+  overflow: hidden;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 5em;
+  font-weight: 800;
+  text-transform: uppercase;
+  will-change: transform, opacity, height;
+  white-space: nowrap;
+  cursor: pointer;
+  line-height: 80px;
 }
