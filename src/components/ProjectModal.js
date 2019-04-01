@@ -1,6 +1,5 @@
 import React, { useState, useCallback } from 'react'
 import { useTransition, animated } from 'react-spring'
-import './styles.css'
 
 const pages = [
   ({ style }) => <animated.div style={{ ...style, background: 'lightpink' }}>A</animated.div>,
