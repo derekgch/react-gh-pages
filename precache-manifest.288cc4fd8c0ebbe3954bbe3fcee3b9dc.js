@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/stockfinder.e99a2dd7.png"
   },
   {
-    "revision": "dfd76ab2e5d9249234b6",
+    "revision": "096dd5cf9d7a721e9086",
     "url": "/static/css/main.0641a254.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "/static/media/typing.7117cc5b.png"
   },
   {
-    "revision": "dfd76ab2e5d9249234b6",
-    "url": "/static/js/main.af2b6e8e.chunk.js"
+    "revision": "096dd5cf9d7a721e9086",
+    "url": "/static/js/main.f2342dc7.chunk.js"
   },
   {
     "revision": "effe2a6bc8f58eeecc2499d03d1a758c",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/static/media/Santorini.988d73a8.jpg"
   },
   {
-    "revision": "67bf19a3056db7af994313f22109baa5",
+    "revision": "843528e24de625cda4ea9480f0cc4c21",
     "url": "/index.html"
   }
 ];
