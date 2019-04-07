@@ -22,6 +22,7 @@ function Name() {
     ref.current.push(setTimeout(() => set(['Full Stack Developer']), 2000))
     ref.current.push(setTimeout(() => set(['Software Engineer']), 5000))
     ref.current.push(setTimeout(() => set(['Derek Guo Chen']), 8000))
+    ref.current.push(setTimeout(() => set(['Full Stack Developer', 'Software Engineer', 'Derek Guo Chen']), 11000))
   }, [])
 
   useEffect(() => void reset(), [])

@@ -47,9 +47,9 @@ class MainContainer extends Component {
         const navbarClassName = this.state.showMenu? "nav ScrollDown" : "nav ScrollUp";
         return (
             <div >
-                <nav className={navbarClassName} >
+                {/* <nav className={navbarClassName} >
                     <NavBar handleMenuClick={this.handleMenuClick} />
-                </nav>
+                </nav> */}
                 <Container menu={this.state.menu}/>
                 
             </div>
