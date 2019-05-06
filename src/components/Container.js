@@ -5,6 +5,7 @@ import Contact from './Contact';
 import About from './About';
 import Gallery from './Gallery';
 import Name from './Name';
+import Lang from './Lang';
 
 class Container extends Component {
 
@@ -51,6 +52,7 @@ class Container extends Component {
                     <Home />
                 </div>
                <Name />
+               <Lang />
 
                 <div ref="projects">
                 <Projects />
