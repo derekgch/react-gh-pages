@@ -63,18 +63,18 @@ class Container extends Component {
                 <div ref="about">
                 <About />
                 </div> */}
-                <Parallax pages={3} scrolling={false} horizontal ref={ref => (this.parallax = ref)}>
+                <Parallax pages={3} scrolling={true} horizontal={false} ref={ref => (this.parallax = ref)}>
                     <ParallaxLayer offset={0} speed={0.5}>
                         <span onClick={() => this.parallax.scrollTo(1)}><Home /></span>
                     </ParallaxLayer>
-                    <ParallaxLayer offset={0} speed={0.5}>
-                        <span onClick={() => this.parallax.scrollTo(1)}><Lang /></span>
+                    <ParallaxLayer offset={1} speed={0.5}>
+                        <span onClick={() => this.parallax.scrollTo(2)}><Name /></span>
                     </ParallaxLayer>
-                    <ParallaxLayer offset={0} speed={0.5}>
-                        <span onClick={() => this.parallax.scrollTo(1)}><Projects /></span>
+                    <ParallaxLayer offset={2} speed={0.5}>
+                        <span onClick={() => this.parallax.scrollTo(3)}><Projects /></span>
                     </ParallaxLayer>
-                    <ParallaxLayer offset={0} speed={0.5}>
-                        <span onClick={() => this.parallax.scrollTo(1)}><About /></span>
+                    <ParallaxLayer offset={3} speed={0.5}>
+                        <span onClick={() => this.parallax.scrollTo(0)}><About /></span>
                     </ParallaxLayer>
                 </Parallax>
 
