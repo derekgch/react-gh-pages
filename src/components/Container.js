@@ -6,6 +6,8 @@ import About from './About';
 import Gallery from './Gallery';
 import Name from './Name';
 import Lang from './Lang';
+import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
+
 
 class Container extends Component {
 
@@ -47,7 +49,7 @@ class Container extends Component {
         this.selectPage(this.props.menu);
         return (
             <div className="container">
-                {/* {this.selectPage(this.props.menu)} */}
+                {/* {this.selectPage(this.props.menu)}
                 <div  ref="home">
                     <Home />
                 </div>
@@ -60,8 +62,23 @@ class Container extends Component {
                 
                 <div ref="about">
                 <About />
-                </div>
-                
+                </div> */}
+                <Parallax pages={3} scrolling={false} horizontal ref={ref => (this.parallax = ref)}>
+                    <ParallaxLayer offset={0} speed={0.5}>
+                        <span onClick={() => this.parallax.scrollTo(1)}><Home /></span>
+                    </ParallaxLayer>
+                    <ParallaxLayer offset={0} speed={0.5}>
+                        <span onClick={() => this.parallax.scrollTo(1)}><Lang /></span>
+                    </ParallaxLayer>
+                    <ParallaxLayer offset={0} speed={0.5}>
+                        <span onClick={() => this.parallax.scrollTo(1)}><Projects /></span>
+                    </ParallaxLayer>
+                    <ParallaxLayer offset={0} speed={0.5}>
+                        <span onClick={() => this.parallax.scrollTo(1)}><About /></span>
+                    </ParallaxLayer>
+                </Parallax>
+
+
             </div>
         );
     }
