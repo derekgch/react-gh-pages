@@ -49,21 +49,7 @@ class Container extends Component {
         this.selectPage(this.props.menu);
         return (
             <div className="container">
-                {/* {this.selectPage(this.props.menu)}
-                <div  ref="home">
-                    <Home />
-                </div>
-               <Name />
-               <Lang />
-
-                <div ref="projects">
-                <Projects />
-                </div>
-                
-                <div ref="about">
-                <About />
-                </div> */}
-                <Parallax pages={3} scrolling={true} horizontal={false} ref={ref => (this.parallax = ref)}>
+                <Parallax pages={4} scrolling={true} horizontal={false} ref={ref => (this.parallax = ref)}>
                     <ParallaxLayer offset={0} speed={0.5}>
                         <span onClick={() => this.parallax.scrollTo(1)}><Home /></span>
                     </ParallaxLayer>
@@ -77,8 +63,6 @@ class Container extends Component {
                         <span onClick={() => this.parallax.scrollTo(0)}><About /></span>
                     </ParallaxLayer>
                 </Parallax>
-
-
             </div>
         );
     }
