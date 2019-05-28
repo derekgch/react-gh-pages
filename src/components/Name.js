@@ -28,7 +28,7 @@ function Name() {
   useEffect(() => void reset(), [])
 
   return (
-    <div className="name-title">
+    <div className="name-title" id="home">
       {transitions.map(({ item, props: { innerHeight, ...rest }, key }) => (
         <animated.div className="transitions-item" key={key} style={rest} onClick={reset}>
           <animated.div style={{ overflow: 'hidden', height: innerHeight }}>{item}</animated.div>

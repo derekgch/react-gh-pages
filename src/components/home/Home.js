@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Background from '../images/Santorini.jpg';
+// import Background from '../images/Santorini.jpg';
 
 class Home extends Component {
     render() {

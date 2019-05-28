@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Home from './Home';
-import Projects from './Projects';
-import Contact from './Contact';
-import About from './About';
-import Gallery from './Gallery';
+import Home from './home/Home';
+import Projects from './project/Projects';
+import Contact from './about/Contact';
+import About from './about/About';
+import Gallery from './gallery/Gallery';
 import Name from './Name';
 import Lang from './Lang';
 import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'

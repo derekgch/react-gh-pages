@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import ProjectCard from './ProjectCard';
-import typingGame from '../images/typing.png'
-import stockfinder from '../images/stockfinder.png'
-import play from '../images/play.png';
-import stockSimulator from '../images/stock-simulator.png'
-import GridCard from './GridCard';
+import typingGame from '../../images/typing.png'
+import stockfinder from '../../images/stockfinder.png'
+import play from '../../images/play.png';
+import stockSimulator from '../../images/stock-simulator.png'
+import GridCard from '../GridCard';
 
 
 import PropTypes from 'prop-types';
