@@ -4,14 +4,14 @@
   "private": true,
   "homepage": "https://derekgch.github.io/",
   "dependencies": {
-    "@material-ui/core": "^3.9.2",
+    "@material-ui/core": "^3.9.3",
     "@material-ui/icons": "^3.0.2",
     "fstream": "^1.0.12",
-    "react": "^16.8.5",
-    "react-dom": "^16.8.5",
-    "react-scripts": "^3.0.1",
-    "react-spring": "^8.0.18",
-    "tar": "^4.4.8"
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-scripts": "^3.2.0",
+    "react-spring": "^8.0.27",
+    "tar": "^4.4.13"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -31,6 +31,6 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.1.1"
   }
 }
